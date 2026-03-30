@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tashi Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">Tashi Portfolio</a>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#work" class="nav-link">Features</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="work" class="section">
+      <h2>Featured Projects</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&q=80"
+              alt="Dashboard UI"
+            />
+            <span class="badge">Web Design</span>
+          </div>
+          <div class="card-body">
+            <h3>Dashboard Redesign</h3>
+            <p>
+              A full overhaul of an analytics platform with a scalable component
+              library.
+            </p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80"
+              alt="Mobile app"
+            />
+            <span class="badge">Mobile</span>
+          </div>
+          <div class="card-body">
+            <h3>Finance App UI</h3>
+            <p>A mobile banking experience focused on clarity and speed.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&q=80"
+              alt="Branding"
+            />
+            <span class="badge">Branding</span>
+          </div>
+          <div class="card-body">
+            <h3>Brand Identity</h3>
+            <p>
+              End-to-end brand identity including logo, palette, and type
+              system.
+            </p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Get In Touch</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Jane Smith"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="jane@example.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select a subject…</option>
+            <option value="project">New Project</option>
+            <option value="freelance">Freelance</option>
+            <option value="consulting">Consulting</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell me about your project…"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group full">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2026 Tashi Portfolio</p>
+    </footer>
+  </body>
+</html>
